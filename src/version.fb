@@ -1,0 +1,63 @@
+mod vulkan;
+
+import std::fmt::{Display, Formatter};
+
+pub struct Version {
+    pub major: u32,
+    pub minor: u32,
+    pub patch: u32,
+}
+
+impl Version {
+    pub func new(major: u32, minor: u32, patch: u32) Version {
+        return Version { major: major, minor: minor, patch: patch };
+    }
+
+    /// Creates a version from a packed Vulkan api version value.
+    pub func from(raw: u32) Version {
+        return Version {
+            major: (raw >> 22) & 0x7F,
+            minor: (raw >> 12) & 0x3FF,
+            patch: raw & 0xFFF,
+        };
+    }
+
+    /// Packs the version into a Vulkan api version value.
+    pub func as_raw(self) u32 {
+        return (self.major << 22) | (self.minor << 12) | self.patch;
+    }
+}
+
+impl Version : Eq[Version] {
+    pub func eq(self, rhs: Version) bool {
+        return self.major == rhs.major && self.minor == rhs.minor && self.patch == rhs.patch;
+    }
+}
+
+impl Version : Ord[Version] {
+    pub func ord(self, rhs: Version) Ordering {
+        var major = ord(self.major, rhs.major);
+        if (major != Ordering::Equal) return major;
+
+        var minor = ord(self.minor, rhs.minor);
+        if (minor != Ordering::Equal) return minor;
+
+        return ord(self.patch, rhs.patch);
+    }
+}
+
+impl Version : Display {
+    pub func display(self, fmt: Formatter) {
+        fmt.u64(self.major, 10);
+        fmt.str(".");
+        fmt.u64(self.minor, 10);
+        fmt.str(".");
+        fmt.u64(self.patch, 10);
+    }
+}
+
+func ord(a: u32, b: u32) Ordering {
+    if (a < b) return Ordering::Less;
+    if (a > b) return Ordering::Greater;
+    return Ordering::Equal;
+}

@@ -1,2 +1,8 @@
 github.com/fireball-lang/bindgen v0.0.0-20260914111114-1eef2ba4278b h1:sOTpaIrh47N+5/mLv+Z4QV0Kc5Ofwyci9WssuNwb3Ak=
 github.com/fireball-lang/bindgen v0.0.0-20260914111114-1eef2ba4278b/go.mod h1:oKsUVrR9ROOyud5W7co3/oE8jontiYCvT2vHAjpcx6A=
+github.com/fireball-lang/bindgen v0.0.0-20260916123246-57a7b6dfa8b3 h1:bKKVcoTQkJMwmdtgJtR/dxYnY11PsNvGvZGZGbqN0oI=
+github.com/fireball-lang/bindgen v0.0.0-20260916123246-57a7b6dfa8b3/go.mod h1:oKsUVrR9ROOyud5W7co3/oE8jontiYCvT2vHAjpcx6A=
+github.com/fireball-lang/bindgen v0.0.0-20260916125046-b54dffada41f h1:lzykgQwJQbP+F38yFobQa4Y8eTHLU7n7bR1qE9vj/k8=
+github.com/fireball-lang/bindgen v0.0.0-20260916125046-b54dffada41f/go.mod h1:oKsUVrR9ROOyud5W7co3/oE8jontiYCvT2vHAjpcx6A=
+github.com/fireball-lang/bindgen v0.0.0-20260917194157-263f1de181e9 h1:ANJUo5lpa0HDSbwQeqv8J3GsHuRBtlLXOzfBQJY4Dls=
+github.com/fireball-lang/bindgen v0.0.0-20260917194157-263f1de181e9/go.mod h1:oKsUVrR9ROOyud5W7co3/oE8jontiYCvT2vHAjpcx6A=

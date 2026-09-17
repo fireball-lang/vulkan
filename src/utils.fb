@@ -1,0 +1,148 @@
+mod vulkan;
+
+import std::fmt::{Formatter};
+import std::{String};
+import std::c;
+
+/// Helper for C bitfield pairs of 24 bits and 8 bits that are packed into a
+/// single 32-bit word. Used by structs such as AccelerationStructureInstanceKHR
+/// where the bitfield ordering is non-normative in C and defined by the
+/// specification instead.
+#[repr(C)]
+pub struct Packed24_8 {
+    pub data: u32,
+}
+
+impl Packed24_8 {
+    pub func new() Packed24_8 {
+        return Packed24_8 { data: 0 };
+    }
+
+    pub func pack(low: u32, high: u32) Packed24_8 {
+        return Packed24_8 { data: (low & 0x00FFFFFF) | ((high & 0xFF) << 24) };
+    }
+
+    /// Reads the 24-bit field (bits 0-23)
+    pub func get_low(self) u32 {
+        return self.data & 0x00FFFFFF;
+    }
+
+    /// Reads the 8-bit field (bits 24-31)
+    pub func get_high(self) u32 {
+        return (self.data >> 24) & 0xFF;
+    }
+
+    /// Writes the 24-bit field (bits 0-23)
+    pub func set_low(mut self, value: u32) {
+        self.data = (self.data & 0xFF000000) | (value & 0x00FFFFFF);
+    }
+
+    /// Writes the 8-bit field (bits 24-31)
+    pub func set_high(mut self, value: u32) {
+        self.data = (self.data & 0x00FFFFFF) | ((value & 0xFF) << 24);
+    }
+}
+
+impl vulkan::Api {
+    /// Returns the version of the instance-level API supported by the loader.
+    /// Requires Vulkan 1.1 or an instance version entry point from the loader.
+    pub func instance_version(self) vulkan::Version {
+        var version: u32;
+        self.enumerate_instance_version(&version);
+
+        return vulkan::Version::from(version);
+    }
+
+    /// Returns whether the loader advertises an instance level extension.
+    pub func has_instance_extension(self, ext: vulkan::Extension) bool {
+        var count: u32;
+        self.enumerate_instance_extension_properties(null, &count, null);
+
+        if (count == 0) return false;
+
+        var props = c::malloc(sizeof(vulkan::ExtensionProperties) * (count as u64)) as mut *vulkan::ExtensionProperties;
+        self.enumerate_instance_extension_properties(null, &count, props);
+
+        var found = has_extension(props, count, ext);
+
+        c::free(props);
+        return found;
+    }
+
+    /// Returns whether a physical device advertises a device level extension.
+    pub func has_device_extension(self, physical_device: vulkan::PhysicalDevice, ext: vulkan::Extension) bool {
+        var count: u32;
+        self.enumerate_device_extension_properties(physical_device, null, &count, null);
+
+        if (count == 0) return false;
+
+        var props = c::malloc(sizeof(vulkan::ExtensionProperties) * (count as u64)) as mut *vulkan::ExtensionProperties;
+        self.enumerate_device_extension_properties(physical_device, null, &count, props);
+
+        var found = has_extension(props, count, ext);
+
+        c::free(props);
+        return found;
+    }
+}
+
+impl vulkan::Result {
+    pub func unwrap(self) {
+        if (*self == Self::Success) return;
+
+        var str: String;
+
+        str.write("vulkan command returned: ");
+        self.write_name(Formatter::new(&str));
+
+        panic(str);
+    }
+
+    pub func expect(self, msg: StringView) {
+        if (*self == Self::Success) return;
+
+        var str: String;
+
+        str.write(msg);
+        str.write(": ");
+        self.write_name(Formatter::new(&str));
+
+        panic(str);
+    }
+
+    func write_name(self, fmt: Formatter) {
+        var cases = typeof(Self).cases();
+        var num = *self as i64;
+
+        for (var i = 0u; i < cases.size; i++) {
+            var case = cases[i];
+
+            if (num < 0) {
+                if (case.negative && case.value == (-num) as u64) {
+                    fmt.str(case.name);
+                    return;
+                }
+            }
+            else {
+                if (!case.negative && case.value == num as u64) {
+                    fmt.str(case.name);
+                    return;
+                }
+            }
+        }
+
+        fmt.i64(num, 10);
+    }
+}
+
+func has_extension(props: mut *vulkan::ExtensionProperties, count: u32, ext: vulkan::Extension) bool {
+    var name = vulkan::extension_name(ext);
+
+    for (var i: u32 = 0; i < count; i += 1) {
+        var current = c::from_cstring(&props[i].extension_name as *u8);
+
+        if (current.eq(name)) return true;
+    }
+
+    return false;
+}

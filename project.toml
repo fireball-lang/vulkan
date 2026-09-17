@@ -1,2 +1,6 @@
 name = "vulkan"
 type = "library"
+
+[[dependency]]
+url = "https://github.com/fireball-lang/std.git"
+revision = "94b3d8d9c2042f2fa03e3cea02403d2feade9b32"
