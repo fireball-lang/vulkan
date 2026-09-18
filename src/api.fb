@@ -729,7 +729,7 @@ impl vulkan::Api {
         var library = open_library()?;
 
         var symbol = library.get("vkGetInstanceProcAddr")?;
-        api.ref_get_instance_proc_addr = symbol as vulkan::VkGetInstanceProcAddr;
+        api.ref_get_instance_proc_addr = symbol as vulkan::GetInstanceProcAddr;
 
         var ptr: mut *void;
 

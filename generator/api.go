@@ -159,7 +159,7 @@ func (ctx *GenContext) WriteApiLoad(w fb.Writer, aliases []*fb.Alias) {
 	w.Write("        var library = open_library()?;\n")
 	w.Write("\n")
 	w.Write("        var symbol = library.get(\"vkGetInstanceProcAddr\")?;\n")
-	w.Write("        api.ref_get_instance_proc_addr = symbol as vulkan::VkGetInstanceProcAddr;\n")
+	w.Write("        api.ref_get_instance_proc_addr = symbol as vulkan::GetInstanceProcAddr;\n")
 	w.Write("\n")
 	w.Write("        var ptr: mut *void;\n")
 
