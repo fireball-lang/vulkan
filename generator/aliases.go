@@ -37,7 +37,7 @@ func (ctx *GenContext) CreateAliases() []*fb.Alias {
 			continue
 		}
 
-		display := "Vk" + strings.TrimPrefix(name, "vk")
+		display := strings.TrimPrefix(name, "vk")
 
 		if _, ok := aliases[display]; ok {
 			continue
@@ -91,7 +91,7 @@ func (ctx *GenContext) CreateAliases() []*fb.Alias {
 		seen := make(map[string]bool)
 
 		for {
-			resolved, ok := aliases["Vk"+strings.TrimPrefix(target, "vk")]
+			resolved, ok := aliases[strings.TrimPrefix(target, "vk")]
 			if !ok {
 				panic("unknown aliased command: " + target)
 			}

@@ -108,285 +108,285 @@ impl vulkan::Api {
         var ptr: mut *void;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkAcquireDrmDisplayEXT".ptr);
-        if (ptr != null) self.ref_acquire_drm_display_ext = ptr as vulkan::VkAcquireDrmDisplayEXT;
+        if (ptr != null) self.ref_acquire_drm_display_ext = ptr as vulkan::AcquireDrmDisplayEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkAcquireXlibDisplayEXT".ptr);
-        if (ptr != null) self.ref_acquire_xlib_display_ext = ptr as vulkan::VkAcquireXlibDisplayEXT;
+        if (ptr != null) self.ref_acquire_xlib_display_ext = ptr as vulkan::AcquireXlibDisplayEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkCreateAndroidSurfaceKHR".ptr);
-        if (ptr != null) self.ref_create_android_surface_khr = ptr as vulkan::VkCreateAndroidSurfaceKHR;
+        if (ptr != null) self.ref_create_android_surface_khr = ptr as vulkan::CreateAndroidSurfaceKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkCreateDebugReportCallbackEXT".ptr);
-        if (ptr != null) self.ref_create_debug_report_callback_ext = ptr as vulkan::VkCreateDebugReportCallbackEXT;
+        if (ptr != null) self.ref_create_debug_report_callback_ext = ptr as vulkan::CreateDebugReportCallbackEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkCreateDebugUtilsMessengerEXT".ptr);
-        if (ptr != null) self.ref_create_debug_utils_messenger_ext = ptr as vulkan::VkCreateDebugUtilsMessengerEXT;
+        if (ptr != null) self.ref_create_debug_utils_messenger_ext = ptr as vulkan::CreateDebugUtilsMessengerEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkCreateDevice".ptr);
-        if (ptr != null) self.ref_create_device = ptr as vulkan::VkCreateDevice;
+        if (ptr != null) self.ref_create_device = ptr as vulkan::CreateDevice;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkCreateDirectFBSurfaceEXT".ptr);
-        if (ptr != null) self.ref_create_direct_fb_surface_ext = ptr as vulkan::VkCreateDirectFBSurfaceEXT;
+        if (ptr != null) self.ref_create_direct_fb_surface_ext = ptr as vulkan::CreateDirectFBSurfaceEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkCreateDisplayModeKHR".ptr);
-        if (ptr != null) self.ref_create_display_mode_khr = ptr as vulkan::VkCreateDisplayModeKHR;
+        if (ptr != null) self.ref_create_display_mode_khr = ptr as vulkan::CreateDisplayModeKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkCreateDisplayPlaneSurfaceKHR".ptr);
-        if (ptr != null) self.ref_create_display_plane_surface_khr = ptr as vulkan::VkCreateDisplayPlaneSurfaceKHR;
+        if (ptr != null) self.ref_create_display_plane_surface_khr = ptr as vulkan::CreateDisplayPlaneSurfaceKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkCreateHeadlessSurfaceEXT".ptr);
-        if (ptr != null) self.ref_create_headless_surface_ext = ptr as vulkan::VkCreateHeadlessSurfaceEXT;
+        if (ptr != null) self.ref_create_headless_surface_ext = ptr as vulkan::CreateHeadlessSurfaceEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkCreateMetalSurfaceEXT".ptr);
-        if (ptr != null) self.ref_create_metal_surface_ext = ptr as vulkan::VkCreateMetalSurfaceEXT;
+        if (ptr != null) self.ref_create_metal_surface_ext = ptr as vulkan::CreateMetalSurfaceEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkCreateWaylandSurfaceKHR".ptr);
-        if (ptr != null) self.ref_create_wayland_surface_khr = ptr as vulkan::VkCreateWaylandSurfaceKHR;
+        if (ptr != null) self.ref_create_wayland_surface_khr = ptr as vulkan::CreateWaylandSurfaceKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkCreateWin32SurfaceKHR".ptr);
-        if (ptr != null) self.ref_create_win32_surface_khr = ptr as vulkan::VkCreateWin32SurfaceKHR;
+        if (ptr != null) self.ref_create_win32_surface_khr = ptr as vulkan::CreateWin32SurfaceKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkCreateXcbSurfaceKHR".ptr);
-        if (ptr != null) self.ref_create_xcb_surface_khr = ptr as vulkan::VkCreateXcbSurfaceKHR;
+        if (ptr != null) self.ref_create_xcb_surface_khr = ptr as vulkan::CreateXcbSurfaceKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkCreateXlibSurfaceKHR".ptr);
-        if (ptr != null) self.ref_create_xlib_surface_khr = ptr as vulkan::VkCreateXlibSurfaceKHR;
+        if (ptr != null) self.ref_create_xlib_surface_khr = ptr as vulkan::CreateXlibSurfaceKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkDebugReportMessageEXT".ptr);
-        if (ptr != null) self.ref_debug_report_message_ext = ptr as vulkan::VkDebugReportMessageEXT;
+        if (ptr != null) self.ref_debug_report_message_ext = ptr as vulkan::DebugReportMessageEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkDestroyDebugReportCallbackEXT".ptr);
-        if (ptr != null) self.ref_destroy_debug_report_callback_ext = ptr as vulkan::VkDestroyDebugReportCallbackEXT;
+        if (ptr != null) self.ref_destroy_debug_report_callback_ext = ptr as vulkan::DestroyDebugReportCallbackEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkDestroyDebugUtilsMessengerEXT".ptr);
-        if (ptr != null) self.ref_destroy_debug_utils_messenger_ext = ptr as vulkan::VkDestroyDebugUtilsMessengerEXT;
+        if (ptr != null) self.ref_destroy_debug_utils_messenger_ext = ptr as vulkan::DestroyDebugUtilsMessengerEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkDestroyInstance".ptr);
-        if (ptr != null) self.ref_destroy_instance = ptr as vulkan::VkDestroyInstance;
+        if (ptr != null) self.ref_destroy_instance = ptr as vulkan::DestroyInstance;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkDestroySurfaceKHR".ptr);
-        if (ptr != null) self.ref_destroy_surface_khr = ptr as vulkan::VkDestroySurfaceKHR;
+        if (ptr != null) self.ref_destroy_surface_khr = ptr as vulkan::DestroySurfaceKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkEnumerateDeviceExtensionProperties".ptr);
-        if (ptr != null) self.ref_enumerate_device_extension_properties = ptr as vulkan::VkEnumerateDeviceExtensionProperties;
+        if (ptr != null) self.ref_enumerate_device_extension_properties = ptr as vulkan::EnumerateDeviceExtensionProperties;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkEnumerateDeviceLayerProperties".ptr);
-        if (ptr != null) self.ref_enumerate_device_layer_properties = ptr as vulkan::VkEnumerateDeviceLayerProperties;
+        if (ptr != null) self.ref_enumerate_device_layer_properties = ptr as vulkan::EnumerateDeviceLayerProperties;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkEnumeratePhysicalDeviceGroups".ptr);
-        if (ptr != null) self.ref_enumerate_physical_device_groups = ptr as vulkan::VkEnumeratePhysicalDeviceGroups;
+        if (ptr != null) self.ref_enumerate_physical_device_groups = ptr as vulkan::EnumeratePhysicalDeviceGroups;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkEnumeratePhysicalDeviceGroupsKHR".ptr);
-        if (ptr != null) self.ref_enumerate_physical_device_groups_khr = ptr as vulkan::VkEnumeratePhysicalDeviceGroupsKHR;
+        if (ptr != null) self.ref_enumerate_physical_device_groups_khr = ptr as vulkan::EnumeratePhysicalDeviceGroupsKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkEnumeratePhysicalDeviceQueueFamilyPerformanceQueryCountersKHR".ptr);
-        if (ptr != null) self.ref_enumerate_physical_device_queue_family_performance_query_counters_khr = ptr as vulkan::VkEnumeratePhysicalDeviceQueueFamilyPerformanceQueryCountersKHR;
+        if (ptr != null) self.ref_enumerate_physical_device_queue_family_performance_query_counters_khr = ptr as vulkan::EnumeratePhysicalDeviceQueueFamilyPerformanceQueryCountersKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkEnumeratePhysicalDevices".ptr);
-        if (ptr != null) self.ref_enumerate_physical_devices = ptr as vulkan::VkEnumeratePhysicalDevices;
+        if (ptr != null) self.ref_enumerate_physical_devices = ptr as vulkan::EnumeratePhysicalDevices;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetDeviceProcAddr".ptr);
-        if (ptr != null) self.ref_get_device_proc_addr = ptr as vulkan::VkGetDeviceProcAddr;
+        if (ptr != null) self.ref_get_device_proc_addr = ptr as vulkan::GetDeviceProcAddr;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetDisplayModeProperties2KHR".ptr);
-        if (ptr != null) self.ref_get_display_mode_properties2_khr = ptr as vulkan::VkGetDisplayModeProperties2KHR;
+        if (ptr != null) self.ref_get_display_mode_properties2_khr = ptr as vulkan::GetDisplayModeProperties2KHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetDisplayModePropertiesKHR".ptr);
-        if (ptr != null) self.ref_get_display_mode_properties_khr = ptr as vulkan::VkGetDisplayModePropertiesKHR;
+        if (ptr != null) self.ref_get_display_mode_properties_khr = ptr as vulkan::GetDisplayModePropertiesKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetDisplayPlaneCapabilities2KHR".ptr);
-        if (ptr != null) self.ref_get_display_plane_capabilities2_khr = ptr as vulkan::VkGetDisplayPlaneCapabilities2KHR;
+        if (ptr != null) self.ref_get_display_plane_capabilities2_khr = ptr as vulkan::GetDisplayPlaneCapabilities2KHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetDisplayPlaneCapabilitiesKHR".ptr);
-        if (ptr != null) self.ref_get_display_plane_capabilities_khr = ptr as vulkan::VkGetDisplayPlaneCapabilitiesKHR;
+        if (ptr != null) self.ref_get_display_plane_capabilities_khr = ptr as vulkan::GetDisplayPlaneCapabilitiesKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetDisplayPlaneSupportedDisplaysKHR".ptr);
-        if (ptr != null) self.ref_get_display_plane_supported_displays_khr = ptr as vulkan::VkGetDisplayPlaneSupportedDisplaysKHR;
+        if (ptr != null) self.ref_get_display_plane_supported_displays_khr = ptr as vulkan::GetDisplayPlaneSupportedDisplaysKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetDrmDisplayEXT".ptr);
-        if (ptr != null) self.ref_get_drm_display_ext = ptr as vulkan::VkGetDrmDisplayEXT;
+        if (ptr != null) self.ref_get_drm_display_ext = ptr as vulkan::GetDrmDisplayEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceCalibrateableTimeDomainsEXT".ptr);
-        if (ptr != null) self.ref_get_physical_device_calibrateable_time_domains_ext = ptr as vulkan::VkGetPhysicalDeviceCalibrateableTimeDomainsEXT;
+        if (ptr != null) self.ref_get_physical_device_calibrateable_time_domains_ext = ptr as vulkan::GetPhysicalDeviceCalibrateableTimeDomainsEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceCalibrateableTimeDomainsKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_calibrateable_time_domains_khr = ptr as vulkan::VkGetPhysicalDeviceCalibrateableTimeDomainsKHR;
+        if (ptr != null) self.ref_get_physical_device_calibrateable_time_domains_khr = ptr as vulkan::GetPhysicalDeviceCalibrateableTimeDomainsKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceCooperativeMatrixProperties2EXT".ptr);
-        if (ptr != null) self.ref_get_physical_device_cooperative_matrix_properties2_ext = ptr as vulkan::VkGetPhysicalDeviceCooperativeMatrixProperties2EXT;
+        if (ptr != null) self.ref_get_physical_device_cooperative_matrix_properties2_ext = ptr as vulkan::GetPhysicalDeviceCooperativeMatrixProperties2EXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceCooperativeMatrixPropertiesKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_cooperative_matrix_properties_khr = ptr as vulkan::VkGetPhysicalDeviceCooperativeMatrixPropertiesKHR;
+        if (ptr != null) self.ref_get_physical_device_cooperative_matrix_properties_khr = ptr as vulkan::GetPhysicalDeviceCooperativeMatrixPropertiesKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceDescriptorSizeEXT".ptr);
-        if (ptr != null) self.ref_get_physical_device_descriptor_size_ext = ptr as vulkan::VkGetPhysicalDeviceDescriptorSizeEXT;
+        if (ptr != null) self.ref_get_physical_device_descriptor_size_ext = ptr as vulkan::GetPhysicalDeviceDescriptorSizeEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceDirectFBPresentationSupportEXT".ptr);
-        if (ptr != null) self.ref_get_physical_device_direct_fb_presentation_support_ext = ptr as vulkan::VkGetPhysicalDeviceDirectFBPresentationSupportEXT;
+        if (ptr != null) self.ref_get_physical_device_direct_fb_presentation_support_ext = ptr as vulkan::GetPhysicalDeviceDirectFBPresentationSupportEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceDisplayPlaneProperties2KHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_display_plane_properties2_khr = ptr as vulkan::VkGetPhysicalDeviceDisplayPlaneProperties2KHR;
+        if (ptr != null) self.ref_get_physical_device_display_plane_properties2_khr = ptr as vulkan::GetPhysicalDeviceDisplayPlaneProperties2KHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceDisplayPlanePropertiesKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_display_plane_properties_khr = ptr as vulkan::VkGetPhysicalDeviceDisplayPlanePropertiesKHR;
+        if (ptr != null) self.ref_get_physical_device_display_plane_properties_khr = ptr as vulkan::GetPhysicalDeviceDisplayPlanePropertiesKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceDisplayProperties2KHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_display_properties2_khr = ptr as vulkan::VkGetPhysicalDeviceDisplayProperties2KHR;
+        if (ptr != null) self.ref_get_physical_device_display_properties2_khr = ptr as vulkan::GetPhysicalDeviceDisplayProperties2KHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceDisplayPropertiesKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_display_properties_khr = ptr as vulkan::VkGetPhysicalDeviceDisplayPropertiesKHR;
+        if (ptr != null) self.ref_get_physical_device_display_properties_khr = ptr as vulkan::GetPhysicalDeviceDisplayPropertiesKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceExternalBufferProperties".ptr);
-        if (ptr != null) self.ref_get_physical_device_external_buffer_properties = ptr as vulkan::VkGetPhysicalDeviceExternalBufferProperties;
+        if (ptr != null) self.ref_get_physical_device_external_buffer_properties = ptr as vulkan::GetPhysicalDeviceExternalBufferProperties;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceExternalBufferPropertiesKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_external_buffer_properties_khr = ptr as vulkan::VkGetPhysicalDeviceExternalBufferPropertiesKHR;
+        if (ptr != null) self.ref_get_physical_device_external_buffer_properties_khr = ptr as vulkan::GetPhysicalDeviceExternalBufferPropertiesKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceExternalFenceProperties".ptr);
-        if (ptr != null) self.ref_get_physical_device_external_fence_properties = ptr as vulkan::VkGetPhysicalDeviceExternalFenceProperties;
+        if (ptr != null) self.ref_get_physical_device_external_fence_properties = ptr as vulkan::GetPhysicalDeviceExternalFenceProperties;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceExternalFencePropertiesKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_external_fence_properties_khr = ptr as vulkan::VkGetPhysicalDeviceExternalFencePropertiesKHR;
+        if (ptr != null) self.ref_get_physical_device_external_fence_properties_khr = ptr as vulkan::GetPhysicalDeviceExternalFencePropertiesKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceExternalSemaphoreProperties".ptr);
-        if (ptr != null) self.ref_get_physical_device_external_semaphore_properties = ptr as vulkan::VkGetPhysicalDeviceExternalSemaphoreProperties;
+        if (ptr != null) self.ref_get_physical_device_external_semaphore_properties = ptr as vulkan::GetPhysicalDeviceExternalSemaphoreProperties;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceExternalSemaphorePropertiesKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_external_semaphore_properties_khr = ptr as vulkan::VkGetPhysicalDeviceExternalSemaphorePropertiesKHR;
+        if (ptr != null) self.ref_get_physical_device_external_semaphore_properties_khr = ptr as vulkan::GetPhysicalDeviceExternalSemaphorePropertiesKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceFeatures".ptr);
-        if (ptr != null) self.ref_get_physical_device_features = ptr as vulkan::VkGetPhysicalDeviceFeatures;
+        if (ptr != null) self.ref_get_physical_device_features = ptr as vulkan::GetPhysicalDeviceFeatures;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceFeatures2".ptr);
-        if (ptr != null) self.ref_get_physical_device_features2 = ptr as vulkan::VkGetPhysicalDeviceFeatures2;
+        if (ptr != null) self.ref_get_physical_device_features2 = ptr as vulkan::GetPhysicalDeviceFeatures2;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceFeatures2KHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_features2_khr = ptr as vulkan::VkGetPhysicalDeviceFeatures2KHR;
+        if (ptr != null) self.ref_get_physical_device_features2_khr = ptr as vulkan::GetPhysicalDeviceFeatures2KHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceFormatProperties".ptr);
-        if (ptr != null) self.ref_get_physical_device_format_properties = ptr as vulkan::VkGetPhysicalDeviceFormatProperties;
+        if (ptr != null) self.ref_get_physical_device_format_properties = ptr as vulkan::GetPhysicalDeviceFormatProperties;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceFormatProperties2".ptr);
-        if (ptr != null) self.ref_get_physical_device_format_properties2 = ptr as vulkan::VkGetPhysicalDeviceFormatProperties2;
+        if (ptr != null) self.ref_get_physical_device_format_properties2 = ptr as vulkan::GetPhysicalDeviceFormatProperties2;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceFormatProperties2KHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_format_properties2_khr = ptr as vulkan::VkGetPhysicalDeviceFormatProperties2KHR;
+        if (ptr != null) self.ref_get_physical_device_format_properties2_khr = ptr as vulkan::GetPhysicalDeviceFormatProperties2KHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceFragmentShadingRatesKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_fragment_shading_rates_khr = ptr as vulkan::VkGetPhysicalDeviceFragmentShadingRatesKHR;
+        if (ptr != null) self.ref_get_physical_device_fragment_shading_rates_khr = ptr as vulkan::GetPhysicalDeviceFragmentShadingRatesKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceImageFormatProperties".ptr);
-        if (ptr != null) self.ref_get_physical_device_image_format_properties = ptr as vulkan::VkGetPhysicalDeviceImageFormatProperties;
+        if (ptr != null) self.ref_get_physical_device_image_format_properties = ptr as vulkan::GetPhysicalDeviceImageFormatProperties;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceImageFormatProperties2".ptr);
-        if (ptr != null) self.ref_get_physical_device_image_format_properties2 = ptr as vulkan::VkGetPhysicalDeviceImageFormatProperties2;
+        if (ptr != null) self.ref_get_physical_device_image_format_properties2 = ptr as vulkan::GetPhysicalDeviceImageFormatProperties2;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceImageFormatProperties2KHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_image_format_properties2_khr = ptr as vulkan::VkGetPhysicalDeviceImageFormatProperties2KHR;
+        if (ptr != null) self.ref_get_physical_device_image_format_properties2_khr = ptr as vulkan::GetPhysicalDeviceImageFormatProperties2KHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceMemoryProperties".ptr);
-        if (ptr != null) self.ref_get_physical_device_memory_properties = ptr as vulkan::VkGetPhysicalDeviceMemoryProperties;
+        if (ptr != null) self.ref_get_physical_device_memory_properties = ptr as vulkan::GetPhysicalDeviceMemoryProperties;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceMemoryProperties2".ptr);
-        if (ptr != null) self.ref_get_physical_device_memory_properties2 = ptr as vulkan::VkGetPhysicalDeviceMemoryProperties2;
+        if (ptr != null) self.ref_get_physical_device_memory_properties2 = ptr as vulkan::GetPhysicalDeviceMemoryProperties2;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceMemoryProperties2KHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_memory_properties2_khr = ptr as vulkan::VkGetPhysicalDeviceMemoryProperties2KHR;
+        if (ptr != null) self.ref_get_physical_device_memory_properties2_khr = ptr as vulkan::GetPhysicalDeviceMemoryProperties2KHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceMultisamplePropertiesEXT".ptr);
-        if (ptr != null) self.ref_get_physical_device_multisample_properties_ext = ptr as vulkan::VkGetPhysicalDeviceMultisamplePropertiesEXT;
+        if (ptr != null) self.ref_get_physical_device_multisample_properties_ext = ptr as vulkan::GetPhysicalDeviceMultisamplePropertiesEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDevicePresentRectanglesKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_present_rectangles_khr = ptr as vulkan::VkGetPhysicalDevicePresentRectanglesKHR;
+        if (ptr != null) self.ref_get_physical_device_present_rectangles_khr = ptr as vulkan::GetPhysicalDevicePresentRectanglesKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceProperties".ptr);
-        if (ptr != null) self.ref_get_physical_device_properties = ptr as vulkan::VkGetPhysicalDeviceProperties;
+        if (ptr != null) self.ref_get_physical_device_properties = ptr as vulkan::GetPhysicalDeviceProperties;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceProperties2".ptr);
-        if (ptr != null) self.ref_get_physical_device_properties2 = ptr as vulkan::VkGetPhysicalDeviceProperties2;
+        if (ptr != null) self.ref_get_physical_device_properties2 = ptr as vulkan::GetPhysicalDeviceProperties2;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceProperties2KHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_properties2_khr = ptr as vulkan::VkGetPhysicalDeviceProperties2KHR;
+        if (ptr != null) self.ref_get_physical_device_properties2_khr = ptr as vulkan::GetPhysicalDeviceProperties2KHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceQueueFamilyPerformanceQueryPassesKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_queue_family_performance_query_passes_khr = ptr as vulkan::VkGetPhysicalDeviceQueueFamilyPerformanceQueryPassesKHR;
+        if (ptr != null) self.ref_get_physical_device_queue_family_performance_query_passes_khr = ptr as vulkan::GetPhysicalDeviceQueueFamilyPerformanceQueryPassesKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceQueueFamilyProperties".ptr);
-        if (ptr != null) self.ref_get_physical_device_queue_family_properties = ptr as vulkan::VkGetPhysicalDeviceQueueFamilyProperties;
+        if (ptr != null) self.ref_get_physical_device_queue_family_properties = ptr as vulkan::GetPhysicalDeviceQueueFamilyProperties;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceQueueFamilyProperties2".ptr);
-        if (ptr != null) self.ref_get_physical_device_queue_family_properties2 = ptr as vulkan::VkGetPhysicalDeviceQueueFamilyProperties2;
+        if (ptr != null) self.ref_get_physical_device_queue_family_properties2 = ptr as vulkan::GetPhysicalDeviceQueueFamilyProperties2;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceQueueFamilyProperties2KHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_queue_family_properties2_khr = ptr as vulkan::VkGetPhysicalDeviceQueueFamilyProperties2KHR;
+        if (ptr != null) self.ref_get_physical_device_queue_family_properties2_khr = ptr as vulkan::GetPhysicalDeviceQueueFamilyProperties2KHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceSparseImageFormatProperties".ptr);
-        if (ptr != null) self.ref_get_physical_device_sparse_image_format_properties = ptr as vulkan::VkGetPhysicalDeviceSparseImageFormatProperties;
+        if (ptr != null) self.ref_get_physical_device_sparse_image_format_properties = ptr as vulkan::GetPhysicalDeviceSparseImageFormatProperties;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceSparseImageFormatProperties2".ptr);
-        if (ptr != null) self.ref_get_physical_device_sparse_image_format_properties2 = ptr as vulkan::VkGetPhysicalDeviceSparseImageFormatProperties2;
+        if (ptr != null) self.ref_get_physical_device_sparse_image_format_properties2 = ptr as vulkan::GetPhysicalDeviceSparseImageFormatProperties2;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceSparseImageFormatProperties2KHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_sparse_image_format_properties2_khr = ptr as vulkan::VkGetPhysicalDeviceSparseImageFormatProperties2KHR;
+        if (ptr != null) self.ref_get_physical_device_sparse_image_format_properties2_khr = ptr as vulkan::GetPhysicalDeviceSparseImageFormatProperties2KHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceSurfaceCapabilities2EXT".ptr);
-        if (ptr != null) self.ref_get_physical_device_surface_capabilities2_ext = ptr as vulkan::VkGetPhysicalDeviceSurfaceCapabilities2EXT;
+        if (ptr != null) self.ref_get_physical_device_surface_capabilities2_ext = ptr as vulkan::GetPhysicalDeviceSurfaceCapabilities2EXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceSurfaceCapabilities2KHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_surface_capabilities2_khr = ptr as vulkan::VkGetPhysicalDeviceSurfaceCapabilities2KHR;
+        if (ptr != null) self.ref_get_physical_device_surface_capabilities2_khr = ptr as vulkan::GetPhysicalDeviceSurfaceCapabilities2KHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceSurfaceCapabilitiesKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_surface_capabilities_khr = ptr as vulkan::VkGetPhysicalDeviceSurfaceCapabilitiesKHR;
+        if (ptr != null) self.ref_get_physical_device_surface_capabilities_khr = ptr as vulkan::GetPhysicalDeviceSurfaceCapabilitiesKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceSurfaceFormats2KHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_surface_formats2_khr = ptr as vulkan::VkGetPhysicalDeviceSurfaceFormats2KHR;
+        if (ptr != null) self.ref_get_physical_device_surface_formats2_khr = ptr as vulkan::GetPhysicalDeviceSurfaceFormats2KHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceSurfaceFormatsKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_surface_formats_khr = ptr as vulkan::VkGetPhysicalDeviceSurfaceFormatsKHR;
+        if (ptr != null) self.ref_get_physical_device_surface_formats_khr = ptr as vulkan::GetPhysicalDeviceSurfaceFormatsKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceSurfacePresentModes2EXT".ptr);
-        if (ptr != null) self.ref_get_physical_device_surface_present_modes2_ext = ptr as vulkan::VkGetPhysicalDeviceSurfacePresentModes2EXT;
+        if (ptr != null) self.ref_get_physical_device_surface_present_modes2_ext = ptr as vulkan::GetPhysicalDeviceSurfacePresentModes2EXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceSurfacePresentModesKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_surface_present_modes_khr = ptr as vulkan::VkGetPhysicalDeviceSurfacePresentModesKHR;
+        if (ptr != null) self.ref_get_physical_device_surface_present_modes_khr = ptr as vulkan::GetPhysicalDeviceSurfacePresentModesKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceSurfaceSupportKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_surface_support_khr = ptr as vulkan::VkGetPhysicalDeviceSurfaceSupportKHR;
+        if (ptr != null) self.ref_get_physical_device_surface_support_khr = ptr as vulkan::GetPhysicalDeviceSurfaceSupportKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceToolProperties".ptr);
-        if (ptr != null) self.ref_get_physical_device_tool_properties = ptr as vulkan::VkGetPhysicalDeviceToolProperties;
+        if (ptr != null) self.ref_get_physical_device_tool_properties = ptr as vulkan::GetPhysicalDeviceToolProperties;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceToolPropertiesEXT".ptr);
-        if (ptr != null) self.ref_get_physical_device_tool_properties_ext = ptr as vulkan::VkGetPhysicalDeviceToolPropertiesEXT;
+        if (ptr != null) self.ref_get_physical_device_tool_properties_ext = ptr as vulkan::GetPhysicalDeviceToolPropertiesEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceVideoCapabilitiesKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_video_capabilities_khr = ptr as vulkan::VkGetPhysicalDeviceVideoCapabilitiesKHR;
+        if (ptr != null) self.ref_get_physical_device_video_capabilities_khr = ptr as vulkan::GetPhysicalDeviceVideoCapabilitiesKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceVideoEncodeQualityLevelPropertiesKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_video_encode_quality_level_properties_khr = ptr as vulkan::VkGetPhysicalDeviceVideoEncodeQualityLevelPropertiesKHR;
+        if (ptr != null) self.ref_get_physical_device_video_encode_quality_level_properties_khr = ptr as vulkan::GetPhysicalDeviceVideoEncodeQualityLevelPropertiesKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceVideoFormatPropertiesKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_video_format_properties_khr = ptr as vulkan::VkGetPhysicalDeviceVideoFormatPropertiesKHR;
+        if (ptr != null) self.ref_get_physical_device_video_format_properties_khr = ptr as vulkan::GetPhysicalDeviceVideoFormatPropertiesKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceWaylandPresentationSupportKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_wayland_presentation_support_khr = ptr as vulkan::VkGetPhysicalDeviceWaylandPresentationSupportKHR;
+        if (ptr != null) self.ref_get_physical_device_wayland_presentation_support_khr = ptr as vulkan::GetPhysicalDeviceWaylandPresentationSupportKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceWin32PresentationSupportKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_win32_presentation_support_khr = ptr as vulkan::VkGetPhysicalDeviceWin32PresentationSupportKHR;
+        if (ptr != null) self.ref_get_physical_device_win32_presentation_support_khr = ptr as vulkan::GetPhysicalDeviceWin32PresentationSupportKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceXcbPresentationSupportKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_xcb_presentation_support_khr = ptr as vulkan::VkGetPhysicalDeviceXcbPresentationSupportKHR;
+        if (ptr != null) self.ref_get_physical_device_xcb_presentation_support_khr = ptr as vulkan::GetPhysicalDeviceXcbPresentationSupportKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetPhysicalDeviceXlibPresentationSupportKHR".ptr);
-        if (ptr != null) self.ref_get_physical_device_xlib_presentation_support_khr = ptr as vulkan::VkGetPhysicalDeviceXlibPresentationSupportKHR;
+        if (ptr != null) self.ref_get_physical_device_xlib_presentation_support_khr = ptr as vulkan::GetPhysicalDeviceXlibPresentationSupportKHR;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkGetRandROutputDisplayEXT".ptr);
-        if (ptr != null) self.ref_get_rand_r_output_display_ext = ptr as vulkan::VkGetRandROutputDisplayEXT;
+        if (ptr != null) self.ref_get_rand_r_output_display_ext = ptr as vulkan::GetRandROutputDisplayEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkReleaseDisplayEXT".ptr);
-        if (ptr != null) self.ref_release_display_ext = ptr as vulkan::VkReleaseDisplayEXT;
+        if (ptr != null) self.ref_release_display_ext = ptr as vulkan::ReleaseDisplayEXT;
 
         ptr = self.ref_get_instance_proc_addr(instance, "vkSubmitDebugUtilsMessageEXT".ptr);
-        if (ptr != null) self.ref_submit_debug_utils_message_ext = ptr as vulkan::VkSubmitDebugUtilsMessageEXT;
+        if (ptr != null) self.ref_submit_debug_utils_message_ext = ptr as vulkan::SubmitDebugUtilsMessageEXT;
     }
 }
